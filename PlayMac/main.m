@@ -10,13 +10,11 @@
 
 int main(int argc, const char * argv[])
 {
-
     @autoreleasepool {
-        NSTimeZone  *zone=[NSTimeZone systemTimeZone];
-        NSString *name=[zone name];
-        
-        NSLog(@"you are in %@ timezone",name);
-        
+        NSHost *currentHost= [NSHost currentHost];
+        NSString *localizedName=[currentHost localizedName];
+        NSString *address=[currentHost address];
+        NSLog(@"my mac is name: %@ and addresss is %@",localizedName,address);
     }
     return 0;
 }

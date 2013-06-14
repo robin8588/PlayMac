@@ -7,33 +7,21 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "StockHolding.h"
+#import "Logger.h"
 
 int main(int argc, const char * argv[])
 {
     @autoreleasepool {
-        StockHolding *s1 =[[StockHolding alloc] init];
-        StockHolding *s2 =[[StockHolding alloc] init];
-        StockHolding *s3 =[[StockHolding alloc] init];
-
-        [s1 setPurchasePrice:2.3];
-        [s1 setCurrentPrice:4.5];
-        [s1 setNumberOfShares:40];
         
-        [s2 setPurchasePrice:12.19];
-        [s2 setCurrentPrice:10.56];
-        [s2 setNumberOfShares:90];
-
-        [s3 setPurchasePrice:45.10];
-        [s3 setCurrentPrice:49.51];
-        [s3 setNumberOfShares:210];
-
-        NSArray *array=[NSArray arrayWithObjects:s1,s2,s3, nil];
+        Logger *logger =[[Logger alloc] init];
         
-        for (StockHolding * s in array) {
-            NSLog(@"s is %f %f",[s costInDollars],[s valueInDollars]);
+        NSURL *url=[NSURL URLWithString:@"http://www.gutenberg.org/cache/epub/205/pg205.txt"];
         
-        }
+        NSURLRequest *request =[NSURLRequest requestWithURL:url];
+        
+        __unused NSURLConnection *fetchConn=[[NSURLConnection alloc] initWithRequest:request delegate:logger startImmediately:YES];
+        
+        [[NSRunLoop currentRunLoop] run];
     }
     
     return 0;

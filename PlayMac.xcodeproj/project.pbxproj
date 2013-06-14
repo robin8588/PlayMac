@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1AA2E846176ABF800051E95E /* Logger.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AA2E845176ABF800051E95E /* Logger.m */; };
 		1AECA195176087FB00037C08 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AECA194176087FB00037C08 /* Foundation.framework */; };
 		1AECA198176087FB00037C08 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AECA197176087FB00037C08 /* main.m */; };
 		1AECA19C176087FB00037C08 /* PlayMac.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1AECA19B176087FB00037C08 /* PlayMac.1 */; };
-		1AFF74491762E3F40074762C /* StockHolding.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AFF74481762E3F40074762C /* StockHolding.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,13 +27,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1AA2E844176ABF800051E95E /* Logger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Logger.h; sourceTree = "<group>"; };
+		1AA2E845176ABF800051E95E /* Logger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Logger.m; sourceTree = "<group>"; };
 		1AECA191176087FB00037C08 /* PlayMac */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = PlayMac; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AECA194176087FB00037C08 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1AECA197176087FB00037C08 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1AECA19A176087FB00037C08 /* PlayMac-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PlayMac-Prefix.pch"; sourceTree = "<group>"; };
 		1AECA19B176087FB00037C08 /* PlayMac.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = PlayMac.1; sourceTree = "<group>"; };
-		1AFF74471762E3F40074762C /* StockHolding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StockHolding.h; sourceTree = "<group>"; };
-		1AFF74481762E3F40074762C /* StockHolding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StockHolding.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,8 +79,8 @@
 				1AECA197176087FB00037C08 /* main.m */,
 				1AECA19B176087FB00037C08 /* PlayMac.1 */,
 				1AECA199176087FB00037C08 /* Supporting Files */,
-				1AFF74471762E3F40074762C /* StockHolding.h */,
-				1AFF74481762E3F40074762C /* StockHolding.m */,
+				1AA2E844176ABF800051E95E /* Logger.h */,
+				1AA2E845176ABF800051E95E /* Logger.m */,
 			);
 			path = PlayMac;
 			sourceTree = "<group>";
@@ -145,7 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1AECA198176087FB00037C08 /* main.m in Sources */,
-				1AFF74491762E3F40074762C /* StockHolding.m in Sources */,
+				1AA2E846176ABF800051E95E /* Logger.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

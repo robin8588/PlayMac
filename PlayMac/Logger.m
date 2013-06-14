@@ -38,6 +38,11 @@ didFailWithError:(NSError *)error
     incomingData=nil;
 }
 
+-(void)zoneChange:(NSNotification *)note
+{
+    NSLog(@"time has change %@",note.description);
+}
+
 -(void)sayOuch:(NSTimer *)t
 {
     NSLog(@"Ouch");

@@ -7,24 +7,17 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "Logger.h"
+#import "NSString+VowelCounter.h"
 
 int main(int argc, const char * argv[])
 {
     @autoreleasepool {
-        
-        Logger *logger =[[Logger alloc] init];
-        
-        [[NSNotificationCenter defaultCenter]
-         addObserver:logger
-         selector:@selector(zoneChange:)
-         name:NSSystemTimeZoneDidChangeNotification
-         object:nil];
-        
-        
-        [[NSRunLoop currentRunLoop] run];
+       NSString *st=@"hello world";
+        NSLog(@"%@ has %d vpw",st,[st vowelCount]);
     }
-    
-    return 0;
+           return 0;
 }
+
+
+
 

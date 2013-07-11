@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1AA2E846176ABF800051E95E /* Logger.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AA2E845176ABF800051E95E /* Logger.m */; };
+		1A98741F178E90A600D61753 /* NSString+VowelCounter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A98741E178E90A600D61753 /* NSString+VowelCounter.m */; };
 		1AECA195176087FB00037C08 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AECA194176087FB00037C08 /* Foundation.framework */; };
 		1AECA198176087FB00037C08 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AECA197176087FB00037C08 /* main.m */; };
 		1AECA19C176087FB00037C08 /* PlayMac.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1AECA19B176087FB00037C08 /* PlayMac.1 */; };
@@ -27,8 +27,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		1AA2E844176ABF800051E95E /* Logger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Logger.h; sourceTree = "<group>"; };
-		1AA2E845176ABF800051E95E /* Logger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Logger.m; sourceTree = "<group>"; };
+		1A98741D178E90A600D61753 /* NSString+VowelCounter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+VowelCounter.h"; sourceTree = "<group>"; };
+		1A98741E178E90A600D61753 /* NSString+VowelCounter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+VowelCounter.m"; sourceTree = "<group>"; };
 		1AECA191176087FB00037C08 /* PlayMac */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = PlayMac; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AECA194176087FB00037C08 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1AECA197176087FB00037C08 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -79,8 +79,8 @@
 				1AECA197176087FB00037C08 /* main.m */,
 				1AECA19B176087FB00037C08 /* PlayMac.1 */,
 				1AECA199176087FB00037C08 /* Supporting Files */,
-				1AA2E844176ABF800051E95E /* Logger.h */,
-				1AA2E845176ABF800051E95E /* Logger.m */,
+				1A98741D178E90A600D61753 /* NSString+VowelCounter.h */,
+				1A98741E178E90A600D61753 /* NSString+VowelCounter.m */,
 			);
 			path = PlayMac;
 			sourceTree = "<group>";
@@ -145,7 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1AECA198176087FB00037C08 /* main.m in Sources */,
-				1AA2E846176ABF800051E95E /* Logger.m in Sources */,
+				1A98741F178E90A600D61753 /* NSString+VowelCounter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

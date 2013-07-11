@@ -7,15 +7,32 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "NSString+VowelCounter.h"
 
 int main(int argc, const char * argv[])
 {
     @autoreleasepool {
-       NSString *st=@"hello world";
-        NSLog(@"%@ has %d vpw",st,[st vowelCount]);
+        NSArray *oldStrings=[NSArray arrayWithObjects:@"skdjsasdf",@"denvladkg",@"foengkicjq",@"odvnvnbcowj",nil];
+        NSLog(@"oldstring is %@",oldStrings);
+        
+        NSMutableArray *newStrings=[NSMutableArray array];
+        
+        NSArray *vowels=[NSArray arrayWithObjects:@"a",@"e",@"i",@"o",@"u", nil];
+        
+        void(^devowelizer)(id,NSUInteger,BOOL *) =^(id string,NSUInteger i,BOOL *stop){
+            NSMutableString *newString=[NSMutableString stringWithString:string];
+            
+            for (NSString *s in vowels){
+                NSRange fullRange=NSMakeRange(0, [newString length]);
+                [newString replaceOccurrencesOfString:s withString:@"" options:NSCaseInsensitiveSearch range:fullRange];
+            };
+            
+            [newStrings addObject:newString];
+        };
+        
+        [oldStrings enumerateObjectsUsingBlock:devowelizer];
+        NSLog(@"oldstring is %@",newStrings);
     }
-           return 0;
+    return 0;
 }
 
 

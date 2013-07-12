@@ -18,7 +18,8 @@ int main(int argc, const char * argv[])
         
         NSArray *vowels=[NSArray arrayWithObjects:@"a",@"e",@"i",@"o",@"u", nil];
         
-        void(^devowelizer)(id,NSUInteger,BOOL *) =^(id string,NSUInteger i,BOOL *stop){
+                
+        [oldStrings enumerateObjectsUsingBlock:^(id string,NSUInteger i,BOOL *stop){
             NSMutableString *newString=[NSMutableString stringWithString:string];
             
             for (NSString *s in vowels){
@@ -27,9 +28,8 @@ int main(int argc, const char * argv[])
             };
             
             [newStrings addObject:newString];
-        };
-        
-        [oldStrings enumerateObjectsUsingBlock:devowelizer];
+
+        }];
         NSLog(@"oldstring is %@",newStrings);
     }
     return 0;
